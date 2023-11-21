@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+//View model for....
+class ToDoListViewViewModel:ObservableObject{
+    init(){}
+    
+    @Published var showingNewItemView = false
+}

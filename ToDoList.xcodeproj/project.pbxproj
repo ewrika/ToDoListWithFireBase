@@ -130,10 +130,10 @@
 				E89B2BFE2AFAA4580054BA82 /* MainView.swift */,
 				E884277E2B0A7FB900990467 /* ProfileView.swift */,
 				E88427802B0A7FCE00990467 /* ToDoListIView.swift */,
+				E88427882B0A807B00990467 /* ToDoListItemsView.swift */,
 				E88427822B0A7FF000990467 /* NewItemView.swift */,
 				E88427842B0A7FFE00990467 /* LoginView.swift */,
 				E88427862B0A801F00990467 /* RegisterView.swift */,
-				E88427882B0A807B00990467 /* ToDoListItemsView.swift */,
 				E884279E2B0A87E200990467 /* HeaderView.swift */,
 				E82524322B0B4C4F00CFB43B /* TLButton.swift */,
 			);

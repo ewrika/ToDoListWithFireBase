@@ -20,8 +20,10 @@ struct HeaderView: View {
                 .rotationEffect(Angle(degrees: angle))
             VStack{
                 Text(title)
-                
+                    .font(.system(size:66,weight: .bold,design: .monospaced))
                 Text(subtitile)
+                    .font(.system(size:36,weight: .light,design: .monospaced))
+
             }.padding(.top,80)
         }
         .frame(width: UIScreen.main.bounds.width * 3,height: 350)

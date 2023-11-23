@@ -43,7 +43,10 @@ struct LoginView: View {
                 
                 VStack{
                     Text("New account here?")
+                        .font(.system(size:16,weight: .bold,design: .monospaced))
+                        .padding()
                     NavigationLink("Create an Account",destination:RegisterView())
+                        .font(.system(size:20,weight: .bold,design: .monospaced))
                 }.padding(.bottom,50)
                 
                 Spacer()

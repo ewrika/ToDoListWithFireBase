@@ -12,12 +12,13 @@ class RegisterViewViewModel:ObservableObject{
     @Published var name = ""
     @Published var email = ""
     @Published var password = ""
+    @Published var errorMessage = ""
     init(){}
     
     
-    func register (){
+    func register ()->Bool{
         guard validate() else
-        {return}
+        {return false}
         
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result,error in
             guard let userId = result?.user.uid else {
@@ -28,7 +29,7 @@ class RegisterViewViewModel:ObservableObject{
             
             
         }
-        
+    return true
     }
     
     private func insertUserRecord(id:String){
@@ -46,15 +47,20 @@ class RegisterViewViewModel:ObservableObject{
         guard !name.trimmingCharacters(in: .whitespaces).isEmpty,
               !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else{
+            errorMessage = "Please all fields"
             return false
         }
         guard email.contains("@") && email.contains(".") else {
+            errorMessage = "Please enter valid email"
             return false
         }
         
         guard password.count >= 6 else{
+            errorMessage = "Пароль должен быть больше 6 цифр"
             return false
         }
+        
+        
         return true
     }
     

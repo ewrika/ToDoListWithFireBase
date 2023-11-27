@@ -15,7 +15,7 @@ struct LoginView: View {
             VStack{
                 //Header
                 
-                HeaderView(title: "To Do List", subtitile: "Get Things done", angle: 15, background: .pink)
+                HeaderView(title: "To Do List", subtitile: "Get Things done", angle: 15, background: .clear)
                 
 
                 
@@ -30,15 +30,20 @@ struct LoginView: View {
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocorrectionDisabled()
                         .textInputAutocapitalization(.none)
+                        .keyboardType(.emailAddress)
+                        .ignoresSafeArea(.keyboard)
+
                     SecureField("Password ",text:$viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    
+                        .ignoresSafeArea(.keyboard)
                     TLButton(title: "Log in", background: .blue) {
                         viewModel.login()
                     }
                     
-                }
+                }.scrollContentBackground(.hidden)
+                .ignoresSafeArea(.keyboard)
                 .offset(y:-50)
+                
                 //Regist
                 
                 VStack{
@@ -50,9 +55,10 @@ struct LoginView: View {
                 }.padding(.bottom,50)
                 
                 Spacer()
-            }
-            
-        }
+            }.ignoresSafeArea(.keyboard)
+                .background(.pink.gradient)
+
+        }.ignoresSafeArea(.keyboard)
     }
 }
 

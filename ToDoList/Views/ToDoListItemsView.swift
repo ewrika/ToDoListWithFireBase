@@ -38,5 +38,6 @@ struct ToDoListItemsView: View {
                                   title:"Get milk",
                                   dueDate: Date().timeIntervalSince1970,
                                  createDate: Date().timeIntervalSince1970,
-                                 isDone: false))
+                                  isDone: false,
+                                  color: "Color.red"))
 }

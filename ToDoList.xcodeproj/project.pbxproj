@@ -52,6 +52,7 @@
 		E884279B2B0A81B800990467 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884279A2B0A81B800990467 /* RegisterViewViewModel.swift */; };
 		E884279D2B0A81C400990467 /* ToDoListItemsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884279C2B0A81C400990467 /* ToDoListItemsViewViewModel.swift */; };
 		E884279F2B0A87E200990467 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884279E2B0A87E200990467 /* HeaderView.swift */; };
+		E892FB522B166C070019E8B6 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E892FB512B166C070019E8B6 /* ColorPickerView.swift */; };
 		E89B2BFD2AFAA4580054BA82 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89B2BFC2AFAA4580054BA82 /* ToDoListApp.swift */; };
 		E89B2BFF2AFAA4580054BA82 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89B2BFE2AFAA4580054BA82 /* MainView.swift */; };
 		E89B2C012AFAA4590054BA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89B2C002AFAA4590054BA82 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		E884279A2B0A81B800990467 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		E884279C2B0A81C400990467 /* ToDoListItemsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemsViewViewModel.swift; sourceTree = "<group>"; };
 		E884279E2B0A87E200990467 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E892FB512B166C070019E8B6 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		E89B2BF92AFAA4580054BA82 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89B2BFC2AFAA4580054BA82 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		E89B2BFE2AFAA4580054BA82 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				E88427862B0A801F00990467 /* RegisterView.swift */,
 				E884279E2B0A87E200990467 /* HeaderView.swift */,
 				E82524322B0B4C4F00CFB43B /* TLButton.swift */,
+				E892FB512B166C070019E8B6 /* ColorPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				E88427992B0A81B000990467 /* LoginViewViewModel.swift in Sources */,
 				E8D6E7EE2B0BEB6500870CF1 /* Extensions.swift in Sources */,
 				E89B2BFD2AFAA4580054BA82 /* ToDoListApp.swift in Sources */,
+				E892FB522B166C070019E8B6 /* ColorPickerView.swift in Sources */,
 				E884278D2B0A80F300990467 /* ToDoListItem.swift in Sources */,
 				E88427832B0A7FF000990467 /* NewItemView.swift in Sources */,
 				E88427972B0A81A100990467 /* NewItemViewViewModel.swift in Sources */,

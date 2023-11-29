@@ -7,11 +7,14 @@
 import FirebaseAuth
 import FirebaseFirestore
 import Foundation
+import SwiftUI
 
 class NewItemViewViewModel:ObservableObject{
     @Published var title = ""
     @Published var dueDate = Date()
     @Published var showAlert = false
+    @Published var pColor = ""
+
     init(){}
     
     func save(){
@@ -29,7 +32,8 @@ class NewItemViewViewModel:ObservableObject{
             title: title,
             dueDate: dueDate.timeIntervalSince1970,
             createDate: Date().timeIntervalSince1970,
-            isDone: false)
+            isDone: false,
+            color: pColor)
         
         //save model
         let db = Firestore.firestore()

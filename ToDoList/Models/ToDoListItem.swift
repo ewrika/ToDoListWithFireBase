@@ -13,6 +13,7 @@ struct ToDoListItem:Codable,Identifiable{
     let dueDate : TimeInterval
     let createDate : TimeInterval
     var isDone : Bool
+    var color : String
     
     mutating func setDone(_ state: Bool){
         isDone = state 
